@@ -8,14 +8,59 @@
     <link rel="stylesheet" href="css/master.css">
     <style>
         
+        section {
+            background: url(imgs/klipartz.png) no-repeat center;
+            background-size: contain;
+            margin: 0px auto 40px auto;
+            width: 280px;
+            height: 320px;
+        }
+        section.box1 { transition: transform  0.5s ease-in; }
+        section.box1:hover { transform: scale(1.5); }
+        section.box2 { transition: transform 1s ease-out; }
+        section.box2:hover { transform: rotate(360deg); }
+        section.box3 { transition: transform 0.5s,}
+     
+        section.box3:hover { 
+            transform: translateX(100px); 
+            height: 100px;
+            width: 100px;
+        }
+        section.box4 {
+            background-color: #c00;
+            background-image: none;
+            transition: all 2s ease-in-out;
+        }
+        section.box4:hover { background-color: #00c; }
+        section.box5 {
+            background-color: #0c0;
+            background-image: none;
+            transition: background 1s, width 0.5s 1s;
+        }
+section.box5:hover { 
+            background-color: #060; 
+            width: 600px;
+        }
+
     </style>
 </head>
 <body>
     <main>
         <h1> <span><a href="index.html">&larr;</a></span>
             Transitions</h1>
-        <section class="box"></section>
-    </main>
+            <!-- (h3{transform: translate(100px)}section.box$*4) -->
+            <h3>transition: transform  0.5s ease-in</h3>
+            <section class="box1"></section>
+            <h3>transform: rotate(90deg)</h3>
+            <section class="box2"></section>
+            <h3>transform: scale(0.5)</h3>
+            <section class="box3"></section>
+            <h3>transform: skew(30deg)</h3>
+            <section class="box4"></section>
+            <h3>transform: rotate(45deg) scale(0.6)</h3>
+            <section class="box5"></section>
+
+           </main>
     
 </body>
 </html>
