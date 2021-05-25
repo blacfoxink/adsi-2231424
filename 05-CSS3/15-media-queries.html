@@ -4,18 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text shadows</title>
-    <link rel="stylesheet" href="css/master.css">
+    <title>Media Queries</title>
     <style>
+
+        * { transition: all 0.5s ease-out }
+        body { 
+            background-color: #013571;
+            color: #ffffffaa;
+            font: 16px Verdana;
+            margin: 0px;
+            padding: 0px;
+        }
+        main {
+            border: 10px solid #ffffff66;
+            margin: 0px auto;
+            padding: 20px;
+        }
+        main figure.logo {
+            background: url(imgs/pepsi01.png) no-repeat center;
+            height: 354px;
+            margin: 0px auto;
+            width: 919px;
+
+        }
+        main h1 {
+            text-align: center;
+        }
+        main h1 small {
+            font-size: 0.4em;
+        }
+        main h1 small.bp2,
+        main h1 small.bp3 {
+            display: none;
+        }
+        main p {
+            line-height: 1.8em;
+            text-align: justify;
+
+        }
         
-    </style>
+        @media (max-width: 1024px) {
+            main figure.logo {
+                background: url(imgs/pepsi02.png) no-repeat center;
+                height:370px ;
+                width: 480px;
+            }
+            main h1 small.bp1,
+            main h1 small.bp2 {
+                display: none;
+            }
+            main h1 small.bp3 {
+                display: inline;
+            }
+            @media (max-width: 780px) {
+            main figure.logo {
+                background: url(imgs/pepsi03.png) no-repeat center;
+                height: 156px;
+                width: 162px;
+            }
+            main h1 small.bp1,
+            main h1 small.bp2 {
+                display: none;
+            }
+            main h1 small.bp3 {
+                display: inline;
+            }
+        }  
+    }  
+        </style>
 </head>
 <body>
     <main>
-        <h1> <span><a href="index.html">&larr;</a></span>
-            Text shadows</h1>
-        <section class="box"></section>
+        <figure class="logo"></figure>
+        <h1>Media Queries
+            <small class="bp1">(1024ppx)</small>
+            <small class="bp2">(1024ppx)</small>
+            <small class="bp3">(780ppx)</small>
+
+        </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur modi placeat incidunt fuga aliquid accusantium optio quos at eius illo facere minima suscipit doloremque sed consequatur, perspiciatis necessitatibus iusto est illum eveniet laboriosam tenetur! Sed, minus, libero veritatis, est ipsa esse sapiente fugit rem praesentium officiis odio. Mollitia nulla perspiciatis quam esse quidem rem dicta fugit. Rem unde asperiores quisquam iure tenetur modi nostrum magni ut, totam velit non blanditiis. Inventore nihil, odit ipsa dolorem deleniti nostrum fuga illo incidunt amet, voluptas praesentium tempora. Reprehenderit quidem error doloremque. Eligendi voluptatibus tempora nulla cum voluptatum ipsam ipsa fugiat maiores ab nihil saepe perspiciatis magnam quia assumenda qui recusandae provident, soluta, voluptates deserunt temporibus commodi fuga rem accusantium hic? Repellendus voluptatem perspiciatis sapiente magni provident, unde dolorum sit earum ex hic voluptas deserunt atque obcaecati eum expedita quam reprehenderit delectus reiciendis non et debitis! Earum quia saepe expedita error voluptatibus vel placeat modi qui explicabo mollitia nesciunt consequatur autem sunt quis vero, ea obcaecati soluta facere odit dolor consequuntur recusandae alias reiciendis. Placeat et assumenda tempora consequatur, quam sed minima neque accusantium sunt excepturi expedita vitae pariatur ab, debitis maxime reprehenderit architecto ex odio dicta, tempore quod. Atque magni dolore eveniet explicabo!
+        </p>
     </main>
-    
 </body>
 </html>

@@ -5,17 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge-responsive</title>
-    <link rel="stylesheet" href="css/master.css">
     <style>
+
+        * { transition: all 0.5s ease-out ;
+             box-sizing: border-box;
+             }
+            body { justify-self: center;
+            background:url(imgs/crop.jpg) no-repeat center;
+            font-family:sans-serif;
+            padding: 20px auto;
+            margin: 100px auto;
+            font-size: 18px;
+        }
+        main figure.logo {
+            background: url(imgs/onepunchweb.png);
+            height: 400px;
+            margin: 80px auto;
+            width: 1000px;
+        }
+        .container{
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            section.container .box {
+                background: url(imgs/one-punch-man-sorrindo.jpg) no-repeat -300px -50px;
+                display: inline-block;
+                vertical-align: top;
+                height: 350px;
+                margin: 10px auto;
+                width: 300px;
+                position: relative;
+        }
+             section.container .box1 {
+                background: url(imgs/9532e09b8dd945bd7ef4749176b3e109.jpg) no-repeat -150px -50px;
+                display: inline-block;
+                vertical-align: top;
+                height: 350px;
+                margin: 10px auto;
+                width: 300px; 
+                position: relative;
+            }
+            section.container div.box div.text {
+                background-color: rgba(236, 12, 12, 0.572);
+                text-align: center;
+                font-size: 1.3em;
+                padding:20px;
+                position:absolute;
+                bottom: 0;
+                transition: 0.3s linear;
+                width: 100%;
+                color:floralwhite;
+                          
+            }
+            section.container div.box1 div.text {
+                background-color: rgba(211, 11, 11, 0.572);
+                text-align: center;
+                font-size: 1.3em;
+                padding:20px;
+                position:absolute;
+                bottom: 0;
+                transition: transform 0.3s linear;
+                width: 100%;
+                color:floralwhite;
+                          
+            }
+            section.container .box:hover .text {
+                background-color: rgba(241, 226, 9, 0.831);
+                cursor:pointer;
+                height: 100px;
+            }
+            section.container .box1:hover .text {
+                background-color: rgba(236, 221, 8, 0.831);
+                cursor: pointer;
+                height: 100px;
+            }
+
+            section.content {
+                background-color: rgba(0,0,0,.4);
+                height: 620px;
+                margin: 40px auto;
+                padding: 10px;
+                width:1000px;
+ }
+            }
+        section.content .icon {
+            background: url(imgs/main-qimg-2101a743317ac7e4322cd533160178a7.jpg) no-repeat ;
+            height: 400px;
+            width: 600px;
+            position: relative;
+            display:inline-block;
+            vertical-align: top;
+            top: 56px;
+            left: 80px;
+            
+        }
+        section.content .icon1 {
+            display:inline-block;
+            vertical-align: top;
+            margin: 9px auto;
+            position:absolute;
+        }
+
+        section.content article p {
+            border: 2px solid  #aaa;
+            border-style: dotted;
+            color: black;
+            height:150px;
+            text-align: justify;
+            position:inherit;
+            display: inline-block;
+            vertical-align: top;
         
+        }
+        section.content article p {overflow: scroll;
+        height: 150px;}
+        main p {
+            line-height: 1.9em;
+            text-align: justify;
+        }
+        @media (max-width: 1024px) {
+            main figure.logo {
+                background: url(imgs/onepunch2.png) no-repeat center;
+                height: 222px;
+                width: 601px;
+            }
+            @media (max-width: 620px) {
+            main figure.logo {
+                background: url(imgs/onepunchweb\ 3.png) no-repeat center;
+                height: 151px;
+                width: 338px;
+            }
+        }       
+     }
+    
     </style>
 </head>
 <body>
     <main>
-        <h1> <span><a href="index.html">&larr;</a></span>
-            Challenge-responsive</h1>
-        <section class="box"></section>
-    </main>
+     <header>
+    <figure class="logo"></figure>
+</header>
+    <section class="container">
+        <div class="box">
+           <div class="text">
+           OPM ( seasson 1)
+        </div>
+    </div>
+        <div class="box1">
+        <div class="text">
+        OPM ( seasson 2)
+         </div>
+        </div>
+        <div class="box">
+        <div class="text">
+          OPM ( seasson 3)
     
+      </div>
+     </div>
+        <div class="box1">
+        <div class="text">
+      OPM ( seasson 4)
+      </div>
+     </div>
+    </section>
+     <br>  <br>  <br>
+<section class="content">
+    <div class="icon"></div>
+    <div class="icon1">
+
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Maiores nisi expedita illo perferendis sed fugiat veniam
+              voluptatem? Quaerat ex asperiores porro architecto itaque
+               perferendis nulla dolores omnis ab voluptas error explicabo 
+               fugiat sequi modi soluta eos sit dolorum assumenda quisquam
+                praesentium, unde laudantium fugit? Quas recusandae quaerat
+                 quia delectus non, esse ex facere asperiores quod aspernatur 
+                 ipsa laborum alias, voluptate, id sunt natus blanditiis?
+                  Commodi excepturi id consectetur, obcaecati quam earum eum 
+        </p>
+    </article>
+</section>
+    </main>
 </body>
 </html>
