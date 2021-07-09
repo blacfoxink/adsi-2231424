@@ -22,7 +22,19 @@
      <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias et labore sapiente cumque to.</P>
 <strong id="tags"></strong>
 <!-- --------------------------------------------------------- -->
-<h2></h2>
+<h2>Get ClassName</h2>
+<ul>
+<li class="element">Element 1</li>
+<li class="element">Element 2</li>
+<li class="element">Element 3</li>
+<li class="element">Element 4</li>
+<li class="element">Element 5</li>
+</ul>
+<!-- ---------------------------------- -->
+<h2>Query Selector</h2>
+<button class="btn">Button</button>
+<button class="btn">Button</button>
+
  </section>
 
     </main>
@@ -37,7 +49,16 @@
         let tags =document.getElementById('tags')
         tags.innerText = "there are" + ntags.length + "paragraphs";
         //Get Elements by ClassName
+        let elements = document.getElementsByClassName('element');
+        elements[2].style.backgroundColor = '#f0dc68';
+        elements[2].style.fontWeight = '800';
+        elements[2].style.width = '200px';
       //Query Selector 
+let btn = document.querySelector('section button.btn');
+let btns = document.querySelectorAll('section button.btn');
+btn.style.color = "#900";
+btns[1].style.color = "#090"; 
+
 
     </script>
 </body>
